@@ -641,6 +641,13 @@ body {
   justify-content: center;
 }
 
+.rating-stars {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
 .hotel-card-name {
   font-weight: 700;
   font-size: 24px;
@@ -654,6 +661,10 @@ body {
 .hotel-card-type,
 .hotel-card-price {
   line-height: 23px;
+}
+
+.hotel-card:last-of-type {
+  margin-bottom: 30px;
 }
 
 .hotel-rating {
