@@ -305,11 +305,13 @@ outline: 3px solid #83B3D3;
 }
 
 .navigation-link:active {
-  color: #756257;
-  opacity: 0.3;
+  color: rgba(117, 98, 87, 0.3);
   outline: none;
 }
 
+.navigation-link:active .favourites-count{
+  color: rgba(255,255,255,0.3);
+}
 
 .navigation-user {
   justify-content: flex-end;
@@ -525,7 +527,6 @@ fill: #000000;
   top: -7px;
   left: 23px;
   border-radius: 50%;
-
 }
 
 .welcome-title {
@@ -1014,7 +1015,6 @@ fill: #000000;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-  position: relative;
 }
 
 .hotel-card {
