@@ -28,6 +28,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background: #f2f2f2;
 }
 
 img {
@@ -44,6 +45,12 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page-shadow {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -228,13 +235,12 @@ img {
 }
 
 .button-card {
+  margin-top: 5px;
   min-width: 151px;
-  justify-self: center;
 }
 
 .button-favourites {
   background-color: #83b3d3;
-  min-width: 160px;
 }
 
 .button-favourites:hover {
@@ -285,12 +291,13 @@ img {
   margin: 0 auto;
   padding-left: 55px;
   padding-right: 55px;
+  background: #ffffff;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 360px;
+  width: 460px;
   margin-right: auto;
   list-style-type: none;
   display: flex;
@@ -346,7 +353,7 @@ img {
 .navigation-user {
   justify-content: flex-end;
   align-items: center;
-  width: 360px;
+  width: 460px;
   margin-left: auto;
   margin-right: 0;
 }
@@ -413,6 +420,7 @@ img {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background: #ffffff;
 }
 
 .welcome {
@@ -500,6 +508,10 @@ img {
   margin-top: auto;
   margin-bottom: auto;
   border: 1px solid transparent;
+}
+
+.hotel-card-img-link {
+  align-self: center;
 }
 
 .hotel-card-img-link:hover {
@@ -654,6 +666,8 @@ img {
   text-align: center;
   margin-top: 0;
   margin-bottom: 80px;
+  margin-left: 240px;
+  margin-right: 240px;
 }
 
 .reasons-item:nth-of-type(1),
@@ -775,6 +789,7 @@ img {
   width: 1200px;
   padding: 25px 60px;
   margin: 0 auto;
+  background: #ffffff;
 }
 
 .mailing {
@@ -789,6 +804,7 @@ img {
 .mailing-inner {
   padding-top: 63px;
   padding-bottom: 133px;
+  background: #ffffff;
 }
 
 .mailing-index {
@@ -865,7 +881,7 @@ img {
 }
 
 .social {
-  width: 160px;
+  width: 262px;
 }
 
 .social-list {
@@ -877,8 +893,7 @@ img {
 }
 
 .contacts {
-  width: 740px;
-  margin-left: 10px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -1123,21 +1138,21 @@ img {
 }
 
 .button-view-table {
-  background-image: url("../img/mode-tile.svg");
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgB7ZIhCgAACANP//9nRbDYBIMGrwwWrmwCGBXJbPXKkBdcILb9H2wLHLwUBhWIwa7VAAAAAElFTkSuQmCC");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center center;
 }
 
 .button-view-full {
-  background-image: url("../img/mode-slideshow.svg");
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAySURBVHgB7ZIxCgBACMPicf//sg4urqLQxUydSgk1wBnwGPJLNnr4yoIrSPPaH+jROwiK8gQVJ0odtQAAAABJRU5ErkJggg==");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center center;
 }
 
 .button-view-list {
-  background-image: url("../img/mode-list.svg");
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAArSURBVHgB7ZAxDgAABMTK//9MBLtNJLpcbmwFMBKp7T9COU94f4NvsN/AAfLXCAllJkKIAAAAAElFTkSuQmCC");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center center;
@@ -1191,17 +1206,17 @@ img {
 }
 
 .hotel-card-info {
-  width: 535px;
+  width: 800px;
   display: flex;
 }
 
 .hotel-card-info-details {
   width: 320px;
-  margin-left: 37px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 151px 160px repeat(auto-fill, 160px);
   grid-template-rows: min-content auto min-content;
-  column-gap: 3px;
+  column-gap: 9px;
+  margin-left: 37px;
 }
 
 .hotel-card-rating {
@@ -1230,6 +1245,10 @@ img {
 .hotel-card-type,
 .hotel-card-price {
   line-height: 23px;
+}
+
+.hotel-card-price {
+  grid-column: 2 / -1;
 }
 
 .hotel-rating {
@@ -1445,12 +1464,12 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:focus .control-mark {
+.control-input:focus ~ .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83b3d3;
 }
 
-.control:active .control-mark {
+.control-input:active .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
@@ -1583,6 +1602,10 @@ img {
   grid-row: 1 / -1;
   align-self: center;
   border-radius: 50%;
+  max-width: none;
+  object-fit: cover;
+  width: 48px;
+  height: 48px;
 }
 
 .favourites-hotel-card-name {
@@ -1884,6 +1907,7 @@ img {
   margin-left: 9px;
   position: relative;
   cursor: pointer;
+  text-align: center;
 }
 
 .button-info:hover {
